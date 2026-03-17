@@ -1,4 +1,4 @@
-package Examen5;
+package Examen4;
 
 public class Prueba {
 	private int numEliminados;

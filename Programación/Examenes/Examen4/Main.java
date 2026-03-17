@@ -1,16 +1,16 @@
-package Examen5;
+package Examen4;
 
 public class Main {
 	public static void main(String[] args) {
-		Juego calamar = new Juego(400);
+		Juego calamar = new Juego(456);
 		
-		calamar.nuevaPrueba(100);
+		calamar.nuevaPrueba(200);
 		calamar.mostrarJugadores();
 		
-		calamar.nuevaPrueba(100);
+		calamar.nuevaPrueba(200);
 		calamar.mostrarJugadores();
 		
-		calamar.nuevaPrueba(199);
+		calamar.nuevaPrueba(55);
 		calamar.mostrarJugadores();
 		
 		calamar.mostrarPruebas();

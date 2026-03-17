@@ -1,4 +1,4 @@
-package Examen5;
+package Examen4;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -17,6 +17,7 @@ public class Juego {
 	public Juego(int numJugadores) {
 		this.numJugadores = numJugadores;
 		this.numInicial = numJugadores;
+		
 		for(int i=1; i<=this.numJugadores; i++) {
 			Jugador jugador = new Jugador(i);
 			this.jugadores.add(jugador);
@@ -30,8 +31,10 @@ public class Juego {
 	
 	public void nuevaPrueba(int eliminados) {
 		Prueba prueba = new Prueba(eliminados);
+		
 		int operacion = this.numJugadores - eliminados;
 		this.numJugadores = operacion;
+		
 		if(operacion>0) {
 			this.contadorPruebas++;
 			prueba.setNumPrueba(this.contadorPruebas);
