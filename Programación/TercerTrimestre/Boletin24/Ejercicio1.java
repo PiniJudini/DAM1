@@ -26,7 +26,7 @@ public class Ejercicio1 {
 		if(correcto == true) {
 			try {
 				PrintWriter pluma = new PrintWriter(
-						new FileWriter("/home/alumno/tabla-" + numero + ".txt", StandardCharsets.UTF_8));
+						new FileWriter("/home/pinipon/tabla-" + numero + ".txt", StandardCharsets.UTF_8));
 				for (int i = 1; i <= 10; i++) {
 					int operacion = numero * i;
 					pluma.printf("%d x %2d = %d", numero, i, operacion);
