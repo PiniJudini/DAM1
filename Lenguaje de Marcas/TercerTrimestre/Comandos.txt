@@ -1,0 +1,49 @@
+ANOTACIONES
+A la hora de editar o extraer texto u otro valor, recomiendo hacerlo todo dentro de la funcion que los use salvo las constantes.
+
+let variable para introducir una variable.
+
+prompt() para que salga un panel para introducir datos por teclado.
+
+Math.round() para redondear.
+
+for (let i=n; i<=n; i++) es la sintaxis del bucle for.
+
+Math.random() * (fin-inicio+1)+inicio para generar un número aleatorio.
+
+ParseInt() convierte el valor dentro del paréntesis a entero.
+
+let array = [] para crear un array de longitud VARIABLE.
+
+"<br>" para saltos de linea.
+
+Math.max(...array) y Math.min(...array) para sacar el máximo y el mínimo.
+
+cadena.charAt(n) para devolver el caracter de la posicion n de la cadena.
+
+COMANDOS IMPORTANTES DE HTML + JAVASCRIPT
+onclick="funcion_de_javascript()" para que identifique cuando hay un click
+
+cadena_de_html.innerText obtiene el texto de la cadena de HTML. También se usa para introducir texto en el HTML.
+
+alert() para mostrar una ventana emergente.
+
+let set = new Set() para iniciar un conjunto.
+
+set.size muestra el tamaño del conjunto.
+
+set.add(algo) añade contenido al conjunto.
+
+let array = [...set] para convertir un set a array.
+
+onmouseover="funcion_de_javascript()" para detectar si el raton esta encima.
+
+.style.backgroundColor = "color" para cambiar el color.
+
+window.innerWidth para identificar el ancho del navegador.
+
+.style.visibility = "algo" para modificar la visibilidad.
+
+.width para obtener el ancho.
+
+.style.width = "algopx" editar el ancho.
