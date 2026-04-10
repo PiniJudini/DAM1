@@ -1,0 +1,26 @@
+Las explicaciones están en la hoja del examen.
+
+EJERCICIO 1
+const items = document.getElementsByClassName("item")
+for(let i=0; i<items.length-1; i++) {
+    items[i].style.backgroundColor = "blue"
+}
+
+EJERCICIO 2
+const btn = document.querySelector("#delete-btn")
+
+btn.addEventListener("click", () => {
+    btn.remove()
+})
+
+EJERCICIO 3
+const usuario = document.getElementById("username")
+const boton = document.getElementById("boton")
+
+boton.addEventListener("click", () => {
+    var nombre = usuario.value
+    if(nombre === "")
+        alert("Mal")
+    else
+        alert("Bien")
+})
