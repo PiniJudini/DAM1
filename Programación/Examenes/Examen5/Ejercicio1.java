@@ -25,24 +25,26 @@ public class Ejercicio1 {
 			String[] array = linea.split(" ");
 			int id = Integer.parseInt(array[0]);
 			String nombre = array[1] + " " + array[2];
+			// CORREGIDO: String nombre = linea.substring(array[0].length() + 1,
+			// linea.length());
 
 			if (diccionario.get(id) != null)
 				diccionario2.put(nombre, diccionario.get(id));
 			else
 				personas.add(nombre);
 		}
-		
+
 		ArrayList<String> animesSinPersonajes = encontrarAnimesSinPersonajes(diccionario, diccionario2);
-		
+
 		HashSet<String> anim = new HashSet<String>();
 		for (String nombre : diccionario.values())
 			anim.add(nombre);
 
 		ArrayList<String> terminado = new ArrayList<String>(anim);
-		
+
 		for (String nombre : terminado) {
 			System.out.println(nombre);
-			if(animesSinPersonajes.contains(nombre))
+			if (animesSinPersonajes.contains(nombre))
 				System.out.println("- No hay personajes");
 
 			Iterator<Map.Entry<String, String>> iterador = diccionario2.entrySet().iterator();
@@ -75,10 +77,11 @@ public class Ejercicio1 {
 
 		return lineas;
 	}
-	
-	public static ArrayList<String> encontrarAnimesSinPersonajes(HashMap<Integer, String> diccionario, HashMap<String, String> diccionario2) {
+
+	public static ArrayList<String> encontrarAnimesSinPersonajes(HashMap<Integer, String> diccionario,
+			HashMap<String, String> diccionario2) {
 		ArrayList<String> animes2 = new ArrayList<>();
-		
+
 		Iterator<Map.Entry<Integer, String>> iterador1 = diccionario.entrySet().iterator();
 		while (iterador1.hasNext() == true) {
 			Map.Entry<Integer, String> anime = iterador1.next();
@@ -86,10 +89,10 @@ public class Ejercicio1 {
 				animes2.add(anime.getValue());
 			}
 		}
-		
+
 		return animes2;
 	}
-	
+
 	public static HashMap<Integer, String> obtenerDiccionarioAnimes(ArrayList<String> animes) {
 		HashMap<Integer, String> diccionario = new HashMap<>();
 		for (String linea : animes) {
@@ -104,9 +107,11 @@ public class Ejercicio1 {
 			else
 				nombre = array[1] + " " + array[2] + " " + array[3];
 
+			// CORREGIDO String nombre = linea.substring(array[0].length() + 1,
+			// linea.length());
 			diccionario.put(id, nombre);
 		}
-		
+
 		return diccionario;
 	}
 }

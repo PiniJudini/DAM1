@@ -22,6 +22,7 @@ public class Ejercicio2 {
 			String[] array = linea.split(" ");
 			int id = Integer.parseInt(array[0]);
 			String nombre = array[1] + " " + array[2];
+			// CORREGIDO: String nombre = linea.substring(array[0].length() + 1, linea.length());
 
 			if (diccionario.get(id) != null)
 				diccionario2.put(nombre, diccionario.get(id));
