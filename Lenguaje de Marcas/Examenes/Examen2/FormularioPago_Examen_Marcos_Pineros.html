@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pagoexamen.css">
+</head>
+<body>
+    <div id="tablagrande">
+        <div id="caja1">
+            <h1>FORMULARIO DE PAGO</h1>
+        </div>
+        <h6>(Los campos obligatorios se han marcado con *)</h6>
+        <form action="holi.html" method="post">
+        <fieldset id="caja2">
+            <legend><strong>Información de contacto</strong></legend>
+            <fieldset id="cajapequeña">
+                <legend><strong>Profesión</strong></legend>
+                <input type="radio" name="profe" id="profe"> Profesor/a
+                <br>
+                <input type="radio" name="estud" id="estud"> Estudiante
+                <br>
+                <input type="radio" name="otro" id="otro"> Otro
+            </fieldset>
+            <div id="cajapequeña2">
+                <label for="cj2">Nombre<strong>*</strong>:</label>
+                <input type="text" required>
+                <br>
+                <label for="cj2">Correo<strong>*</strong>:</label>
+                <input type="email" required>
+                <br>
+                <label for="cj2">Número de teléfono<strong>*</strong>:</label>
+                <input type="tel" pattern="([0-9]{3}\s[0-9]{2}\s[0-9]{2}\s[0-9]{2})||[0-9]{9}" required>
+                <br>
+                <label for="cj2">Contraseña<strong>*</strong>:</label>
+                <input type="password" required>
+            </div>
+        </fieldset>
+
+        <fieldset id="cajaenvios">
+            <legend><strong>Añadir nueva dirección</strong></legend>
+            <div id="cajapequeñaenvios">
+                <label for="cje">Tipo de vía:</label>
+                <input type="text" name="via" id="via">
+
+                <label for="cje">Dirección:</label>
+                <input type="text" name="dir" id="dir">
+
+                <label for="cje">Población:</label>
+                <select name="pobl" id="poblacion">
+                    <option value="1">Elige la población</option>
+                    <option value="2">Madrid</option>
+                    <option value="3">Maracaná</option>
+                    <option value="4">Diego García</option>
+                </select>
+
+                <label for="cje">Observaciones:</label>
+                <textarea name="obs" id="observaciones" rows="5"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset id="caja3">
+            <legend><strong>Información de pago</strong></legend>
+            <div id="cajapequeña3">
+                <label for="cj3">Tipo de tarjeta:</label> 
+                <select name="tarjeta" id="tarjeta">
+                    <option value="1">Visa</option>
+                    <option value="2">Mastercard</option>
+                </select>
+                <br>
+                <label for="cj3">Número de tarjeta<strong>*</strong>:</label>
+                <input type="text" required>
+                <br>
+                <label for="cj3">Fecha de caducidad<strong>*</strong>:</label>
+                <input type="date" min="2023-12-31" required>
+                <br>
+                <label for="cj3">Método de pago preferido:</label>
+                <select name="pago2" multiple size="3">
+                <optgroup>
+                    <option value="tarjeta">Tarjeta de Crédito</option>
+                    <option value="paypal">Paypal</option>
+                    <option value="bizum">Bizum</option>
+                    <option value="trans">Transferencia</option>
+                </optgroup>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset id="caja4">
+            <legend><strong>Política de privacidad</strong></legend>
+            <input type="checkbox" name="1" id="1" required> He leído y acepto las Condiciones Generales de contratación y la Política de privacidad.
+            <br>
+            <input type="checkbox" name="2" id="2"> NO quiero recibir newsletters ni comunicaciones comerciales de GOYAZON.
+        </fieldset>
+
+        <div id="caja5">
+            <button type="submit"><strong>VALIDAR EL PAGO</strong></button>
+            <button type="reset"><strong>CANCELAR</strong></button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

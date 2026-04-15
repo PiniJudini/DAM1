@@ -1,0 +1,26 @@
+* {
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+    color: gold;
+    font-size: 3em;
+    text-align: center;
+}
+.post {
+    color: white;
+    padding: 2em;
+    border-color: white;
+    border-style:outset;
+}
+.anuncio {
+    padding: 2em;
+    text-align: right;
+    color: red;
+    border-style: outset;
+    border-color: red;
+}
+.descripcion {
+    text-align:left;
+    color: white;
+}
