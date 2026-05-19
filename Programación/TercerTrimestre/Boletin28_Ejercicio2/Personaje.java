@@ -2,7 +2,7 @@ package Boletin28_Ejercicio2;
 
 import java.util.ArrayList;
 
-public abstract class Personaje implements Mago, Guerrero, Ladron {
+public abstract class Personaje {
 	protected String nombre;
 	protected int nivel = 1;
 	protected ArrayList<Integer> caracteristicas = new ArrayList<Integer>();
