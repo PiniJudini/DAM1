@@ -6,15 +6,9 @@ public interface Ubicacion {
 	
 	void setUbicacion(String string);
 	
-	default void cementerio() {
-		this.setUbicacion("Cementerio");
-	}
-
-	default void biblioteca() {
-		this.setUbicacion("Biblioteca");
-	}
+	void biblioteca();
 	
-	default void mano() {
-		this.setUbicacion("Mano");
-	}
+	void mano();
+	
+	void cementerio();
 }

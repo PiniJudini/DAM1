@@ -14,6 +14,21 @@ public class Carta implements Ubicacion, Comparable<Carta> {
 		this.descripcion = d;
 		this.ubicacion = "Biblioteca";
 	}
+	
+	@Override
+	public void cementerio() {
+		this.setUbicacion("Cementerio");
+	}
+	
+	@Override
+	public void biblioteca() {
+		this.setUbicacion("Biblioteca");
+	}
+	
+	@Override
+	public void mano() {
+		this.setUbicacion("Mano");
+	}
 
 	@Override
 	public int compareTo(Carta carta) {
